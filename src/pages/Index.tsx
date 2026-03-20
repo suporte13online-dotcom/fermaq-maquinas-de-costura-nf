@@ -54,7 +54,7 @@ const Index = () => {
         <div className="container mx-auto grid items-center gap-8 px-4 py-16 md:grid-cols-2 md:py-24">
           <div className="space-y-6">
             <h1 className="font-heading text-4xl font-black leading-tight md:text-5xl lg:text-6xl">
-            Compra e Venda de Máquinas
+            Máquinas de Costura
               <span className="text-gradient block">Peças e Manutenção</span>
             </h1>
             <p className="max-w-lg text-lg text-muted-foreground">
