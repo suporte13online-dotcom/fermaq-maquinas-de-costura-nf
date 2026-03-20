@@ -79,7 +79,8 @@ const Index = () => {
               </a>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center gap-4">
+            <span className="font-heading text-4xl font-black text-primary md:text-5xl">FERMAQ</span>
             <img
               src={mascotImg}
               alt="Mascote FERMAQ"
