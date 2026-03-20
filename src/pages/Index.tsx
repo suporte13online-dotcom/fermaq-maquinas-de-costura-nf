@@ -80,7 +80,7 @@ const Index = () => {
             </div>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <span className="font-heading text-4xl font-black text-primary md:text-5xl">FERMAQ</span>
+            <span className="font-heading text-6xl font-black text-primary md:text-7xl lg:text-8xl">FERMAQ</span>
             <img
               src={mascotImg}
               alt="Mascote FERMAQ"
