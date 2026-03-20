@@ -1,7 +1,7 @@
 import { Phone, MapPin, Wrench, ShoppingBag, Settings, Star, Instagram, MessageCircle, ChevronRight } from "lucide-react";
 import mascotImg from "@/assets/mascot.jpeg";
 import storeImg from "@/assets/store-front.jpg";
-import machineImg from "@/assets/machine-jack.jpeg";
+
 
 const WHATSAPP_LINK = "https://wa.me/5522998582793";
 const INSTAGRAM_LINK = "https://www.instagram.com/fermaqcostura";
