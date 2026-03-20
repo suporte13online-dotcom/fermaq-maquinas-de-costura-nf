@@ -1,7 +1,7 @@
 import { Phone, MapPin, Wrench, ShoppingBag, Settings, Star, Instagram, MessageCircle, ChevronRight } from "lucide-react";
 import mascotImg from "@/assets/mascot.jpeg";
 import storeImg from "@/assets/store-front.jpg";
-import machineImg from "@/assets/machine-jack.jpeg";
+
 
 const WHATSAPP_LINK = "https://wa.me/5522998582793";
 const INSTAGRAM_LINK = "https://www.instagram.com/fermaqcostura";
@@ -138,27 +138,22 @@ const Index = () => {
 
       {/* Products highlight */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto grid items-center gap-8 px-4 md:grid-cols-2">
-          <div className="order-2 md:order-1 space-y-4">
-            <h2 className="font-heading text-3xl font-bold md:text-4xl">
-              Máquinas das <span className="text-gradient">Melhores Marcas</span>
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Trabalhamos com as principais marcas do mercado, como Jack, Singer, Brother e muito mais. Máquinas industriais e domésticas com garantia e suporte técnico.
-            </p>
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-heading font-bold text-primary-foreground transition-all hover:scale-105"
-            >
-              <MessageCircle className="h-5 w-5" />
-              Solicite um Orçamento
-            </a>
-          </div>
-          <div className="order-1 md:order-2 overflow-hidden rounded-xl">
-            <img src={machineImg} alt="Máquina de costura Jack F5" className="w-full object-cover" />
-          </div>
+        <div className="container mx-auto max-w-2xl px-4 text-center">
+          <h2 className="font-heading text-3xl font-bold md:text-4xl">
+            Máquinas das <span className="text-gradient">Melhores Marcas</span>
+          </h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            Trabalhamos com as principais marcas do mercado, como Jack, Singer, Brother e muito mais. Máquinas industriais e domésticas com garantia e suporte técnico.
+          </p>
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-heading font-bold text-primary-foreground transition-all hover:scale-105"
+          >
+            <MessageCircle className="h-5 w-5" />
+            Solicite um Orçamento
+          </a>
         </div>
       </section>
 
