@@ -10,7 +10,7 @@ const MAPS_LINK = "https://www.google.com/maps/search/R.+Thurler,+22+-+Conselhei
 const services = [
   {
     icon: ShoppingBag,
-    title: "Venda de Máquinas",
+    title: "Compra e Venda de Máquinas",
     description: "Máquinas de costura industriais e domésticas das melhores marcas do mercado.",
   },
   {
