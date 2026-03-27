@@ -19,7 +19,7 @@ const machines = [
 const WHATSAPP_LINK = "https://wa.me/5522998582793";
 const INSTAGRAM_LINK = "https://www.instagram.com/fermaqcostura";
 const MAPS_LINK = "https://www.google.com/maps/search/R.+Thurler,+22+-+Conselheiro+Paulino,+Nova+Friburgo+-+RJ,+28633-360";
-const GOOGLE_REVIEW_LINK = "https://www.google.com/maps/search/R.+Thurler,+22+-+Conselheiro+Paulino,+Nova+Friburgo+-+RJ,+28633-360";
+const GOOGLE_REVIEW_LINK = "https://g.page/r/Cabgpn9F59LwEAE/review";
 
 const services = [
   {
