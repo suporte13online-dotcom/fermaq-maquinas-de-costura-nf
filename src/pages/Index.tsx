@@ -195,6 +195,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Google Review */}
+      <section className="hero-gradient py-16 md:py-24">
+        <div className="container mx-auto max-w-2xl px-4 text-center">
+          <h2 className="mb-4 font-heading text-3xl font-bold md:text-4xl">
+            Avalie-nos no <span className="text-gradient">Google</span>
+          </h2>
+          <p className="mb-6 text-muted-foreground">
+            Sua opinião é muito importante para nós! Deixe sua avaliação e ajude outras pessoas a conhecerem nosso trabalho.
+          </p>
+          <div className="mb-6 flex items-center justify-center gap-1">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-8 w-8 fill-primary text-primary" />
+            ))}
+          </div>
+          <a
+            href={GOOGLE_REVIEW_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-heading font-bold text-primary-foreground transition-all hover:scale-105"
+          >
+            <Star className="h-5 w-5" />
+            Avaliar no Google
+          </a>
+        </div>
+      </section>
+
       {/* Contact / Footer */}
       <footer className="hero-gradient border-t border-border py-12">
         <div className="container mx-auto px-4">
@@ -243,7 +269,8 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} FERMAQ - Todos os direitos reservados.
+            <p>© {new Date().getFullYear()} FERMAQ - Todos os direitos reservados.</p>
+            <p className="mt-2 text-xs">Desenvolvido por Cássio Domingos (22) 98160-5225</p>
           </div>
         </div>
       </footer>
