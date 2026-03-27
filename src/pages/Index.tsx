@@ -1,6 +1,19 @@
 import { Phone, MapPin, Wrench, ShoppingBag, Settings, Star, Instagram, MessageCircle, ChevronRight } from "lucide-react";
 import mascotImg from "@/assets/mascot.jpeg";
 import storeImg from "@/assets/store-front.jpg";
+import colareteFechada from "@/assets/colarete-fechada.png";
+import colareteAberta from "@/assets/colarete-aberta.png";
+import jackOverlock from "@/assets/jack-overlock.png";
+import jackReta from "@/assets/jack-reta.png";
+import overlockLanmax from "@/assets/overlock-lanmax.png";
+
+const machines = [
+  { img: colareteFechada, name: "Colarete Fechada" },
+  { img: colareteAberta, name: "Colarete Aberta" },
+  { img: jackOverlock, name: "Jack Overlock" },
+  { img: jackReta, name: "Jack Reta" },
+  { img: overlockLanmax, name: "Overlock Lanmax" },
+];
 
 
 const WHATSAPP_LINK = "https://wa.me/5522998582793";
