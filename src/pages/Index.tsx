@@ -149,6 +149,30 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Machines Models */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-12 text-center font-heading text-3xl font-bold md:text-4xl">
+            Nossos <span className="text-gradient">Modelos</span>
+          </h2>
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+            {machines.map((machine) => (
+              <div
+                key={machine.name}
+                className="card-hover flex flex-col items-center rounded-xl border border-border bg-card p-4"
+              >
+                <img
+                  src={machine.img}
+                  alt={machine.name}
+                  className="mb-3 h-40 w-full object-contain"
+                />
+                <h3 className="text-center font-heading text-sm font-bold md:text-base">{machine.name}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Products highlight */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-2xl px-4 text-center">
