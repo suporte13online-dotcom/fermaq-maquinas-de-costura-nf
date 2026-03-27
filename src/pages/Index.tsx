@@ -1,6 +1,19 @@
 import { Phone, MapPin, Wrench, ShoppingBag, Settings, Star, Instagram, MessageCircle, ChevronRight } from "lucide-react";
 import mascotImg from "@/assets/mascot.jpeg";
 import storeImg from "@/assets/store-front.jpg";
+import colareteFechada from "@/assets/colarete-fechada.png";
+import colareteAberta from "@/assets/colarete-aberta.png";
+import jackOverlock from "@/assets/jack-overlock.png";
+import jackReta from "@/assets/jack-reta.png";
+import overlockLanmax from "@/assets/overlock-lanmax.png";
+
+const machines = [
+  { img: colareteFechada, name: "Colarete Fechada" },
+  { img: colareteAberta, name: "Colarete Aberta" },
+  { img: jackOverlock, name: "Jack Overlock" },
+  { img: jackReta, name: "Jack Reta" },
+  { img: overlockLanmax, name: "Overlock Lanmax" },
+];
 
 
 const WHATSAPP_LINK = "https://wa.me/5522998582793";
@@ -132,6 +145,30 @@ const Index = () => {
               ))}
               <span className="ml-2 text-sm text-muted-foreground">Atendimento 5 estrelas</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Machines Models */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-12 text-center font-heading text-3xl font-bold md:text-4xl">
+            Nossos <span className="text-gradient">Modelos</span>
+          </h2>
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+            {machines.map((machine) => (
+              <div
+                key={machine.name}
+                className="card-hover flex flex-col items-center rounded-xl border border-border bg-card p-4"
+              >
+                <img
+                  src={machine.img}
+                  alt={machine.name}
+                  className="mb-3 h-40 w-full object-contain"
+                />
+                <h3 className="text-center font-heading text-sm font-bold md:text-base">{machine.name}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>
