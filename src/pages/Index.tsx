@@ -195,6 +195,40 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Depoimentos */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-12 text-center font-heading text-3xl font-bold md:text-4xl">
+            O que nossos <span className="text-gradient">clientes dizem</span>
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { name: "Leticia Forny de Carvalho", text: "Trabalho e confiança são a marca registrada da FERMAQ! Não perca tempo procurando outro lugar para assistência de suas Máquinas de costura. Aqui o trabalho é rápido e com bons preços.", stars: 5 },
+              { name: "Vanessa Chaboudet", text: "Atendimento excelente e qualidade nos produtos. Super recomendo.", stars: 5 },
+              { name: "Daiani Mafort", text: "Fiquei muito satisfeita com o atendimento. Vocês são muito prestativos e atenciosos. Parabéns!", stars: 5 },
+              { name: "Maria Fernanda Chaboudet", text: "Ótimo atendimento, preço bom e ótimo assistência técnica!!!", stars: 5 },
+              { name: "Diogenes Paredes", text: "Atendimento excelente, equipamentos de qualidade, técnico muito experiente!", stars: 5 },
+              { name: "Joao Lucas Chazan", text: "Atendimento excelente!!", stars: 5 },
+            ].map((review) => (
+              <div key={review.name} className="card-hover rounded-xl border border-border bg-card p-6">
+                <div className="mb-3 flex items-center gap-1">
+                  {[...Array(review.stars)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                  ))}
+                </div>
+                <p className="mb-4 text-sm text-muted-foreground leading-relaxed">"{review.text}"</p>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 font-heading text-sm font-bold text-primary">
+                    {review.name.charAt(0)}
+                  </div>
+                  <span className="font-heading text-sm font-semibold">{review.name}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Google Review */}
       <section className="hero-gradient py-16 md:py-24">
         <div className="container mx-auto max-w-2xl px-4 text-center">
