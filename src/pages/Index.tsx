@@ -156,18 +156,18 @@ const Index = () => {
           <h2 className="mb-12 text-center font-heading text-3xl font-bold md:text-4xl">
             Nossos <span className="text-gradient">Modelos</span>
           </h2>
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="flex flex-wrap items-center justify-center gap-4">
             {machines.map((machine) => (
               <div
                 key={machine.name}
-                className="card-hover flex flex-col items-center rounded-xl border border-border bg-card p-4"
+                className="card-hover flex flex-col items-center rounded-xl border border-border bg-card p-3 w-36 md:w-40"
               >
                 <img
                   src={machine.img}
                   alt={machine.name}
-                  className="mb-3 h-40 w-full object-contain"
+                  className="mb-2 h-24 w-full object-contain"
                 />
-                <h3 className="text-center font-heading text-sm font-bold md:text-base">{machine.name}</h3>
+                <h3 className="text-center font-heading text-xs font-bold md:text-sm">{machine.name}</h3>
               </div>
             ))}
           </div>
