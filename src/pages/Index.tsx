@@ -264,7 +264,7 @@ const Index = () => {
           <div className="space-y-4">
             {[
               { q: "Vocês trabalham com quais marcas de máquinas?", a: "Trabalhamos com as principais marcas do mercado, como Jack e Lanmax em máquinas novas, além de diversas outras marcas em modelos seminovos." },
-              { q: "Vocês fazem manutenção em máquinas domésticas?", a: "Sim! Realizamos manutenção tanto em máquinas industriais quanto domésticas, de todas as marcas." },
+              { q: "Vocês fazem manutenção em máquinas domésticas?", a: "Sim! Realizamos manutenção tanto em máquinas industriais quanto domésticas." },
               { q: "Como funciona o orçamento?", a: "Você pode solicitar um orçamento pelo nosso WhatsApp. Basta enviar uma mensagem com os detalhes da sua necessidade e retornaremos o mais rápido possível." },
               { q: "Vocês vendem peças e acessórios avulsos?", a: "Sim, temos um amplo estoque de peças originais e acessórios para diversas marcas e modelos de máquinas de costura." },
               { q: "Qual o prazo para manutenção?", a: "O prazo varia de acordo com o tipo de reparo necessário. Após a avaliação técnica, informamos o prazo estimado para o serviço." },
