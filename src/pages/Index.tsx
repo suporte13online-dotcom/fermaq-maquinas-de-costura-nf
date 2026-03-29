@@ -181,7 +181,7 @@ const Index = () => {
             Máquinas das <span className="text-gradient">Melhores Marcas</span>
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Trabalhamos com as principais marcas do mercado, como Jack, Lanmax, e muito mais em modelos seminovas. Máquinas industriais e domésticas com garantia e suporte técnico.
+            Trabalhamos com as principais marcas do mercado, como Jack, Lanmax em máquinas novas e muito mais em modelos seminovas. Máquinas industriais e domésticas com garantia e suporte técnico.
           </p>
           <a
             href={WHATSAPP_LINK}
