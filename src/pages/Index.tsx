@@ -255,6 +255,33 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto max-w-3xl px-4">
+          <h2 className="mb-12 text-center font-heading text-3xl font-bold md:text-4xl">
+            Perguntas <span className="text-gradient">Frequentes</span>
+          </h2>
+          <div className="space-y-4">
+            {[
+              { q: "Vocês trabalham com quais marcas de máquinas?", a: "Trabalhamos com as principais marcas do mercado, como Jack e Lanmax em máquinas novas, além de diversas outras marcas em modelos seminovos." },
+              { q: "Vocês fazem manutenção em máquinas domésticas?", a: "Sim! Realizamos manutenção tanto em máquinas industriais quanto domésticas, de todas as marcas." },
+              { q: "Como funciona o orçamento?", a: "Você pode solicitar um orçamento pelo nosso WhatsApp. Basta enviar uma mensagem com os detalhes da sua necessidade e retornaremos o mais rápido possível." },
+              { q: "Vocês vendem peças e acessórios avulsos?", a: "Sim, temos um amplo estoque de peças originais e acessórios para diversas marcas e modelos de máquinas de costura." },
+              { q: "Qual o prazo para manutenção?", a: "O prazo varia de acordo com o tipo de reparo necessário. Após a avaliação técnica, informamos o prazo estimado para o serviço." },
+              { q: "Vocês oferecem garantia nos serviços?", a: "Sim! Todos os nossos serviços de manutenção e máquinas vendidas possuem garantia." },
+            ].map((faq, i) => (
+              <details key={i} className="group rounded-xl border border-border bg-card">
+                <summary className="flex cursor-pointer items-center justify-between px-6 py-4 font-heading font-semibold transition-colors hover:text-primary">
+                  {faq.q}
+                  <ChevronRight className="h-5 w-5 shrink-0 transition-transform group-open:rotate-90" />
+                </summary>
+                <p className="px-6 pb-4 text-muted-foreground leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact / Footer */}
       <footer className="hero-gradient border-t border-border py-12">
         <div className="container mx-auto px-4">
