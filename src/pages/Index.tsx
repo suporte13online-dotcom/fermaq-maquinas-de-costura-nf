@@ -1,5 +1,5 @@
 import { Phone, MapPin, Wrench, ShoppingBag, Settings, Star, Instagram, MessageCircle, ChevronRight } from "lucide-react";
-import mascotImg from "@/assets/mascot.png";
+import mascotImg from "@/assets/mascot.jpeg";
 import storeImg from "@/assets/store-front.jpg";
 import colareteFechada from "@/assets/colarete-fechada.png";
 import colareteAberta from "@/assets/colarete-aberta.png";
